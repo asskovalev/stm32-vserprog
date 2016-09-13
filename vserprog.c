@@ -433,14 +433,14 @@ int main(void) {
 static void signal_fault(void) {
   uint32_t i;
 
+  LED_ENABLE();
   while (true) {
-    LED_ENABLE();
     LED_BUSY();
-    for (i = 0; i < 5000000; i ++) {
+    for (i = 0; i < 800000; i ++) {
       asm("nop");
     }
-    LED_DISABLE();
-    for (i = 0; i < 5000000; i ++) {
+    LED_IDLE();
+    for (i = 0; i < 800000; i ++) {
       asm("nop");
     }
   }

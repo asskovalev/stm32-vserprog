@@ -19,7 +19,7 @@
 #define BOARD_RCC_LED                RCC_GPIOB
 #define BOARD_PORT_LED               GPIOB
 #define BOARD_PIN_LED                GPIO1
-#define BOARD_LED_HIGH_IS_BUSY       false /* We only have IDLE LED on it, which is active high. */
+#define BOARD_LED_HIGH_IS_BUSY       true /* We only have IDLE LED on it, which is active high. */
 
 #define BOARD_RCC_USB_PULLUP         RCC_GPIOB
 #define BOARD_PORT_USB_PULLUP        GPIOB
